@@ -1,0 +1,15 @@
+{
+  "name": "cardapio_cocadas_da_cris",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cocada": "npx tailwindcss -i ./CSS/cardapio.css -o ./CSS/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
