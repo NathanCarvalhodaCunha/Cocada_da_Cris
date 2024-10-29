@@ -124,7 +124,7 @@ pagamentInput.addEventListener("input", function(event){
 checkoutBtn.addEventListener("click", function(){
     const isOpen = checkRestaurantOpen();
     if(!isOpen){
-        Toastify({  text: "Ops Cocada da Cris está fechada neste momento!",
+        Toastify({  text: "Ops, nós estamos fechados neste momento!",
             duration: 3000,
             close: true,
             gravity: "top",
