@@ -11,10 +11,14 @@ const pagamentWarn = document.getElementById("pagament-warn")
 
 let cart = [];
 
+/** Cart Button **/
+
 cartBtn.addEventListener("click", function() {
     updateCartModal();
     cartModal.style.display = "flex"
 })
+
+/** Display Modal **/
 
 cartModal.addEventListener("click", function(event) {
     if(event.target === cartModal){
@@ -26,6 +30,8 @@ closeModalBtn.addEventListener("click", function() {
     cartModal.style.display = "none"
 })
 
+/** Menu **/
+
 menu.addEventListener("click", function(event) {
     let parentButton = event.target.closest(".add-to-cart-btn")
     if(parentButton){
@@ -35,6 +41,8 @@ menu.addEventListener("click", function(event) {
         addToCart(name, price)
     }
 })
+
+/** Add Cart **/
 
 function addToCart(name, price){
     const existingItem = cart.find(item => item.name === name)
@@ -50,6 +58,8 @@ function addToCart(name, price){
 
     updateCartModal()
 }
+
+/** Modal **/
 
 function updateCartModal(){
     cartItemsContainer.innerHTML = "";
@@ -121,6 +131,8 @@ pagamentInput.addEventListener("input", function(event){
     }
 })
 
+/** Message Checkout **/
+
 checkoutBtn.addEventListener("click", function(){
     const isOpen = checkRestaurantOpen();
     if(!isOpen){
@@ -146,6 +158,8 @@ checkoutBtn.addEventListener("click", function(){
         return;
     }
 
+/** WhatsApp Order **/
+
     const cartItems = cart.map((item) => {
         return (
             ` ${item.name} | Quantidade: (${item.quantity}) | Preço: R$${item.price} |`
@@ -160,6 +174,8 @@ checkoutBtn.addEventListener("click", function(){
     cart = [];
     updateCartModal();
 })
+
+/** Checkout Time **/
 
 function checkRestaurantOpen(){
     const data = new Date();
