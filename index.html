@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cocada da Cris - Os melhores doces de coco!">
+    <meta property="og:image" content=https://cocada-da-cris.vercel.app/Imagens/Logo.jpg>
+    <meta property="og:description" content="Estamos na feira noturna de Quarta e Sexta!">
+    <meta property="og:site_name" content="Cocada da Cris">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./Imagens/Icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/output.css">
+    <title>Cocada da Cris</title>
+</head>
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="Imagens/Logo.jpg" alt="Logo" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Cocada da Cris</h1>
+            <span class="text-white font-medium">Rua Tereza Nougueira Barbosa N° 134, Atibaia - SP</span>
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 6:00 as 22:00</span>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso cardápio!</h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 md:grid-cols-2">
+            <div class="flex gap-2">
+                <img src="Imagens/Cocadas.jpg" alt="Cocada" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Cocada de Fita</p>
+                    <p class="text-sm">Ingredientes: Coco laminado, açúcar e água de coco</p>
+                    <p class="text-sm">Sabores: Branca, morena, mesclada, leite condensado, maracujá e abacaxi</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$11.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cocada" data-price="11.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Bala_Baiana.jpg" alt="Bala Baiana" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Bala Baiana</p>
+                    <p class="text-sm">Ingredientes: Coco ralado, leite condensado, açúcar e gema de ovo</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$15.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bala Baiana" data-price="15.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Quebra_Queixo.jpg" alt="Quebra Queixo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Quebra Queixo</p>
+                    <p class="text-sm">Ingredientes: Coco laminado, coco em pedaços, açúcar e limão</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$11.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Quebra Queixo" data-price="11.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Coquinho.jpg" alt="Coquinho" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Coquinho Açucarado</p>
+                    <p class="text-sm">Ingredientes: Coco em pedaços e açúcar</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$11.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coquinho" data-price="11.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Sortidas.jpg" alt="Sortida" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Sortida</p>
+                    <p class="text-sm">Kit com 6 cocadas, uma de cada sabor</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$28.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sortida" data-price="28.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Encomendas.jpg" alt="Encomendas" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Bala Festa</p>
+                    <p class="text-sm">100 Unidades de bala baiana</p>
+                    <p class="text-sm">Sabores: Branca, morena, mesclada, leite condensado, maracujá e abacaxi</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$160.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bala Festa" data-price="160.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Cocada_Assada.jpg" alt="Cocada Assada" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Cocada Assada</p>
+                    <p class="text-sm">1 Bandeja com a deliciosa cocada de claras em neve</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$11.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cocada Assada" data-price="11.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Cocada_Cremosa.jpg" alt="Cocada Cremosa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Cocada Cremosa</p>
+                    <p class="text-sm">A cocada mais cremosa da nossa linda barraca</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$5.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cocada Cremosa" data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Doce_de_Abóbora.jpg" alt="Doce de Abóbora" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Doce de Abóbora</p>
+                    <p class="text-sm">1 Potinho desse maravilhoso doce com coco ralado</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$11.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Doce de Abóbora" data-price="11.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Doce_de_Batata.jpg" alt="Doce de Batata" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Doce de Batata</p>
+                    <p class="text-sm">1 Potinho com 4 unidades, 2 roxos e 2 amarelos</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$11.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Doce de Batata" data-price="11.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Queijadinhas.jpg" alt="Queijadinhas" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Queijadinhas</p>
+                    <p class="text-sm">1 Saquinho com 5 unidades desse delicioso bolinho de queijo com coco</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$7.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Queijadinhas" data-price="7.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="Imagens/Geladão.jpg" alt="Geladão" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Geladão Gourmet</p>
+                    <p class="text-sm">1 Saquinho muito cremoso e de vários sabores</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$7.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Geladão Gourmet" data-price="7.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Forma de Pagamento:</p>
+            <input type="text" placeholder="Digite a forma de pagamento do seu pedido..." id="pagament" class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="pagament-warn">Digite sua forma de pagamento!</p>
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+                Carrinho
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

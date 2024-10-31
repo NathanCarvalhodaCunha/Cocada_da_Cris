@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cocada": "npx tailwindcss -i ./CSS/cardapio.css -o ./CSS/output.css --watch"
+    "cocada": "npx tailwindcss -i ./CSS/style.css -o ./CSS/output.css --watch"
   },
   "keywords": [],
   "author": "",
