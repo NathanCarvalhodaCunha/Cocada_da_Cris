@@ -73,7 +73,7 @@ function updateCartModal(){
         <div class="flex items-center justify-between">
         <div>
             <p class="font-medium">${item.name}</p>
-            <p>Quantodade: ${item.quantity}</p>
+            <p>Quantidade: ${item.quantity}</p>
             <p class="font-medium mt-2">R$ ${item.price.toFixed(2)}</p>
         </div>
 
@@ -162,7 +162,7 @@ checkoutBtn.addEventListener("click", function(){
 
     const cartItems = cart.map((item) => {
         return (
-            ` ${item.name} | Quantidade: (${item.quantity}) | Preço: R$${item.price} |`
+            `${item.name} | Quantidade: (${item.quantity}) | Preço: R$${item.price} | `
         )
     }).join("")
 
